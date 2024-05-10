@@ -11,13 +11,16 @@
 .container{
     display:flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap:10px;  
+    margin-left: 10px;
+    margin-top: 20px; 
 }
 
 .flag{
     width:150px;
     height:70px;
-    padding:10px
+    padding:10px;
+    object-fit: contain;
 }
 
 .title{
