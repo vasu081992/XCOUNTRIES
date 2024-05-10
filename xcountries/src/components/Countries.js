@@ -6,7 +6,7 @@ const Card = ({country})=>{
     return(
 
         <div className={styles.card}>
-        <img src={country.flags.png} className={styles.flag}/>
+        <img src={country.flags.png} className={styles.flag} alt={country.name.common}/>
         <p className={styles.title}>{country.name.common}</p>
         </div>
     )
@@ -31,7 +31,6 @@ const countriesFetch = async()=>{
 console.log("error occured",err)
  }
 }
-
 // const countriesFetch = ()=>{
 //     fetch('https://restcountries.com/v3.1/all')
 //     .then((res)=>{
@@ -44,7 +43,6 @@ console.log("error occured",err)
 //         console.log(err)
 //     })
 // }
-
 
 useEffect(()=>{
     countriesFetch()
